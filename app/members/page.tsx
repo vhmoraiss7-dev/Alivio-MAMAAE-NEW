@@ -1,5 +1,5 @@
 import { MembersDashboard } from "@/components/members-dashboard"
 
-export default function HomePage() {
+export default function MembersPage() {
   return <MembersDashboard />
 }
