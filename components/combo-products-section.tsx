@@ -1,3 +1,5 @@
+"use client"
+
 import { Card, CardContent } from "@/components/ui/card"
 import Image from "next/image"
 
@@ -79,7 +81,11 @@ export function ComboProductsSection() {
           ))}
         </div>
 
-        <div className="text-center bg-card p-8 rounded-2xl border-2 border-primary/20">
+        <div
+          id="pricing-container"
+          className="text-center bg-card p-8 rounded-2xl border-2 border-primary/20 cursor-pointer hover:shadow-lg transition-all duration-300"
+          onClick={() => window.open("https://pay.cakto.com.br/xf6k92o_570181", "_blank")}
+        >
           <div className="mb-4">
             <span className="text-2xl text-muted-foreground line-through">
               Separados, cada guia custaria R$97 (total R$297)

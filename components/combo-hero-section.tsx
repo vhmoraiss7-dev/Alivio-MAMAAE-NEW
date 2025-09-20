@@ -123,9 +123,19 @@ export function ComboHeroSection() {
                 <Button
                   size="lg"
                   className="bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 text-white font-semibold text-lg px-8 py-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 w-full sm:w-auto"
-                  onClick={() => window.open("https://pay.cakto.com.br/xf6k92o_570181", "_blank")}
+                  onClick={() => {
+                    console.log("[v0] Button clicked, searching for pricing-container")
+                    const pricingContainer = document.getElementById("pricing-container")
+                    console.log("[v0] Found container:", pricingContainer)
+                    if (pricingContainer) {
+                      pricingContainer.scrollIntoView({ behavior: "smooth", block: "center" })
+                      console.log("[v0] Scrolling to container")
+                    } else {
+                      console.log("[v0] Container not found!")
+                    }
+                  }}
                 >
-                  Garantir Acesso por R$ 67
+                  Quero meu acesso agora
                 </Button>
                 <p className="text-sm text-gray-500 mt-4 flex items-center justify-center gap-4">
                   <span className="flex items-center gap-1">
