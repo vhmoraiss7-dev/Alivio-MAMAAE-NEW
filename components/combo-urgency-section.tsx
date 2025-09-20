@@ -132,8 +132,11 @@ export function ComboUrgencySection() {
           </div>
 
           <div className="text-center">
+            <p className="text-lg mb-4" style={{ color: "#374151" }}>
+              Separados, cada guia custaria R$97 (total R$297). Mas hoje você garante acesso vitalício ao combo completo
+              por apenas:
+            </p>
             <div className="text-3xl md:text-4xl font-bold mb-4" style={{ color: "#1f2937" }}>
-              De R$ 180,60 por apenas{" "}
               <span
                 className="px-4 py-2 rounded-xl font-black border-2"
                 style={{
@@ -142,11 +145,11 @@ export function ComboUrgencySection() {
                   borderColor: "#b91c1c",
                 }}
               >
-                R$ 67,90
+                R$67
               </span>
             </div>
             <div className="text-lg mb-6" style={{ color: "#059669" }}>
-              💰 Economia de R$ 112,70 (70% OFF)
+              💰 Economia de R$230
             </div>
 
             <div className="px-4">
@@ -154,7 +157,7 @@ export function ComboUrgencySection() {
                 href="https://pay.cakto.com.br/xf6k92o_570181"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block font-bold shadow-2xl hover:scale-105 transition-all duration-300 pulse-premium rounded-full text-sm md:text-base px-6 py-4 w-full max-w-sm mx-auto border-2"
+                className="inline-block font-bold shadow-2xl hover:scale-105 transition-all duration-300 mega-pulse rounded-full text-sm md:text-base px-6 py-4 w-full max-w-sm mx-auto border-2"
                 style={{
                   backgroundColor: "#dc2626",
                   color: "#ffffff",
@@ -164,12 +167,13 @@ export function ComboUrgencySection() {
                   textAlign: "center",
                 }}
               >
-                💕 QUERO O COMBO AGORA! 💕
+                💕 GARANTIR MEU ACESSO POR APENAS R$67 💕
               </a>
             </div>
 
             <p className="text-sm mt-4" style={{ color: "#374151" }}>
-              ✅ Acesso imediato • ✅ Garantia de 15 dias • ✅ Pagamento seguro
+              ✅ Acesso imediato • ✅ Você tem 7 dias para testar. Se não gostar, devolvemos seu dinheiro sem
+              burocracia. • ✅ Pagamento seguro
             </p>
           </div>
         </div>

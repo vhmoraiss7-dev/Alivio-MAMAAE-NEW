@@ -29,138 +29,145 @@ export function ComboHeroSection() {
   }, [])
 
   return (
-    <section className="baby-nursery-bg py-20 px-4 relative overflow-hidden min-h-screen">
-      {/* Mamadeiras flutuantes suaves */}
-      <div className="absolute top-20 left-10 text-4xl baby-float opacity-70">🍼</div>
-      <div className="absolute top-40 right-20 text-3xl baby-float opacity-60" style={{ animationDelay: "1s" }}>
-        🍼
-      </div>
-      <div className="absolute bottom-40 left-20 text-3xl baby-float opacity-80" style={{ animationDelay: "2s" }}>
-        🍼
+    <section className="relative bg-gradient-to-br from-rose-50 via-white to-pink-50 overflow-hidden">
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-20 left-20 w-32 h-32 bg-rose-200 rounded-full blur-3xl"></div>
+        <div className="absolute top-40 right-32 w-24 h-24 bg-pink-200 rounded-full blur-2xl"></div>
+        <div className="absolute bottom-32 left-1/3 w-40 h-40 bg-rose-100 rounded-full blur-3xl"></div>
       </div>
 
-      {/* Elementos baby decorativos */}
-      <div className="absolute top-32 right-10 text-3xl baby-float opacity-70">👶</div>
-      <div className="absolute bottom-20 right-40 text-2xl baby-float opacity-60" style={{ animationDelay: "1.5s" }}>
-        🧸
-      </div>
-      <div className="absolute top-60 left-40 text-2xl baby-float opacity-80" style={{ animationDelay: "0.5s" }}>
-        🌙
-      </div>
-
-      {/* Nuvens decorativas */}
-      <div className="cloud-decoration w-20 h-12 top-16 left-1/4"></div>
-      <div className="cloud-decoration w-16 h-10 top-32 right-1/3" style={{ animationDelay: "2s" }}></div>
-      <div className="cloud-decoration w-24 h-14 bottom-40 left-1/3" style={{ animationDelay: "4s" }}></div>
-
-      <div className="max-w-6xl mx-auto relative z-10">
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 offer-card px-8 py-4 rounded-full text-lg font-black mb-8 soft-pulse">
-            ✨ OFERTA ESPECIAL - APENAS 48H ✨
-          </div>
-
-          <h1 className="text-4xl md:text-7xl font-black text-gray-800 mb-8 text-balance leading-tight">
-            <span className="text-pink-500 gentle-bounce inline-block">JORNADA</span>
-            <br />
-            <span className="bg-gradient-to-r from-pink-400 to-pink-600 bg-clip-text text-transparent">MATERNA</span>
-            <br />
-            <span className="text-pink-500 gentle-bounce inline-block" style={{ animationDelay: "0.5s" }}>
-              COMPLETA
-            </span>
-          </h1>
-
-          <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 mb-10 max-w-4xl mx-auto border-2 border-pink-200 soft-pulse">
-            <p className="text-xl md:text-2xl text-black mb-6 font-semibold" style={{ color: "#000000 !important" }}>
-              O ÚNICO COMBO que acompanha você desde a <span className="price-highlight">GESTAÇÃO</span> até os
-              primeiros anos do seu bebê!
-            </p>
-
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
-              <div className="offer-card p-4 rounded-2xl text-center">
-                <div className="text-2xl mb-2">🤰</div>
-                <div className="font-bold text-sm">Massagens Gestação</div>
-              </div>
-              <div className="offer-card p-4 rounded-2xl text-center">
-                <div className="text-2xl mb-2">🤱</div>
-                <div className="font-bold text-sm">Amamentação</div>
-              </div>
-              <div className="offer-card p-4 rounded-2xl text-center">
-                <div className="text-2xl mb-2">💪</div>
-                <div className="font-bold text-sm">Pós-Parto</div>
-              </div>
-              <div className="offer-card p-4 rounded-2xl text-center">
-                <div className="text-2xl mb-2">😴</div>
-                <div className="font-bold text-sm">Sono do Bebê</div>
-              </div>
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="pt-20 pb-16 lg:pt-32 lg:pb-24">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-rose-500 to-pink-500 text-white px-6 py-3 rounded-full text-sm font-semibold mb-8 shadow-lg">
+              <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
+              OFERTA LIMITADA • ÚLTIMAS HORAS
             </div>
 
-            <p className="text-lg text-black" style={{ color: "#000000 !important" }}>
-              <span className="price-highlight text-xl">4 GUIAS COMPLETOS</span> para uma maternidade tranquila e
-              segura!
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-8 leading-tight">
+              <span className="block">O único combo que</span>
+              <span className="block bg-gradient-to-r from-rose-500 to-pink-500 bg-clip-text text-transparent">
+                acompanha você
+              </span>
+              <span className="block text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-gray-700 font-medium mt-2">
+                desde a gestação até os primeiros anos do bebê
+              </span>
+            </h1>
+
+            <p className="text-xl lg:text-2xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed">
+              Massagens, amamentação, recuperação pós-parto e sono do bebê.
+              <span className="font-semibold text-gray-800"> Tudo em um único lugar.</span>
             </p>
           </div>
 
-          <div className="flex justify-center items-center gap-4 mb-12">
-            <div className="offer-card px-6 py-4 rounded-2xl text-center gentle-bounce">
-              <div className="text-3xl font-black text-white">{timeLeft.hours.toString().padStart(2, "0")}</div>
-              <div className="text-xs font-bold text-white">HORAS</div>
-            </div>
-            <div className="text-4xl text-pink-400 baby-float">⏰</div>
-            <div
-              className="offer-card px-6 py-4 rounded-2xl text-center gentle-bounce"
-              style={{ animationDelay: "0.5s" }}
-            >
-              <div className="text-3xl font-black text-white">{timeLeft.minutes.toString().padStart(2, "0")}</div>
-              <div className="text-xs font-bold text-white">MIN</div>
-            </div>
-            <div className="text-4xl text-pink-400 baby-float" style={{ animationDelay: "1s" }}>
-              ✨
-            </div>
-            <div
-              className="offer-card px-6 py-4 rounded-2xl text-center gentle-bounce"
-              style={{ animationDelay: "1s" }}
-            >
-              <div className="text-3xl font-black text-white">{timeLeft.seconds.toString().padStart(2, "0")}</div>
-              <div className="text-xs font-bold text-white">SEG</div>
-            </div>
-          </div>
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="order-2 lg:order-1">
+              <div className="grid grid-cols-2 gap-4 mb-8">
+                <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                  <div className="w-12 h-12 bg-rose-100 rounded-xl flex items-center justify-center mb-4">
+                    <span className="text-2xl">🤰</span>
+                  </div>
+                  <h3 className="font-semibold text-gray-900 mb-2">Massagens na Gestação</h3>
+                  <p className="text-sm text-gray-600">Técnicas seguras para alívio e bem-estar</p>
+                </div>
+                <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                  <div className="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center mb-4">
+                    <span className="text-2xl">🤱</span>
+                  </div>
+                  <h3 className="font-semibold text-gray-900 mb-2">Amamentação</h3>
+                  <p className="text-sm text-gray-600">Guia completo para sucesso na amamentação</p>
+                </div>
+                <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                  <div className="w-12 h-12 bg-rose-100 rounded-xl flex items-center justify-center mb-4">
+                    <span className="text-2xl">💪</span>
+                  </div>
+                  <h3 className="font-semibold text-gray-900 mb-2">Recuperação Pós-Parto</h3>
+                  <p className="text-sm text-gray-600">Volta por cima com segurança e saúde</p>
+                </div>
+                <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                  <div className="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center mb-4">
+                    <span className="text-2xl">😴</span>
+                  </div>
+                  <h3 className="font-semibold text-gray-900 mb-2">Sono do Bebê</h3>
+                  <p className="text-sm text-gray-600">Métodos eficazes para noites tranquilas</p>
+                </div>
+              </div>
 
-          <Button
-            size="lg"
-            className="bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-lg md:text-xl font-black text-white hover:scale-105 transition-all duration-300 soft-pulse shadow-lg border-2 border-pink-300 rounded-full px-6 md:px-8 py-4 md:py-6 w-full max-w-sm mx-auto"
-            onClick={() => window.open("https://pay.cakto.com.br/xf6k92o_570181", "_blank")}
-          >
-            💕 QUERO O COMBO AGORA! 💕
-          </Button>
+              <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 mb-8">
+                <p className="text-center text-sm font-medium text-gray-600 mb-4">OFERTA EXPIRA EM:</p>
+                <div className="flex justify-center items-center gap-4">
+                  <div className="text-center">
+                    <div className="bg-gradient-to-br from-rose-500 to-pink-500 text-white rounded-xl px-4 py-3 min-w-[60px]">
+                      <div className="text-2xl font-bold">{timeLeft.hours.toString().padStart(2, "0")}</div>
+                    </div>
+                    <div className="text-xs font-medium text-gray-500 mt-1">HORAS</div>
+                  </div>
+                  <div className="text-2xl text-gray-300">:</div>
+                  <div className="text-center">
+                    <div className="bg-gradient-to-br from-rose-500 to-pink-500 text-white rounded-xl px-4 py-3 min-w-[60px]">
+                      <div className="text-2xl font-bold">{timeLeft.minutes.toString().padStart(2, "0")}</div>
+                    </div>
+                    <div className="text-xs font-medium text-gray-500 mt-1">MIN</div>
+                  </div>
+                  <div className="text-2xl text-gray-300">:</div>
+                  <div className="text-center">
+                    <div className="bg-gradient-to-br from-rose-500 to-pink-500 text-white rounded-xl px-4 py-3 min-w-[60px]">
+                      <div className="text-2xl font-bold">{timeLeft.seconds.toString().padStart(2, "0")}</div>
+                    </div>
+                    <div className="text-xs font-medium text-gray-500 mt-1">SEG</div>
+                  </div>
+                </div>
+              </div>
 
-          <p className="text-lg text-gray-600 mt-6 font-semibold">
-            ✅ Acesso IMEDIATO • ✅ Garantia de 7 dias • ✅ Suporte ESPECIALIZADO
-          </p>
-        </div>
+              <div className="text-center">
+                <Button
+                  size="lg"
+                  className="bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 text-white font-semibold text-lg px-8 py-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 w-full sm:w-auto"
+                  onClick={() => window.open("https://pay.cakto.com.br/xf6k92o_570181", "_blank")}
+                >
+                  Garantir Acesso por R$ 67
+                </Button>
+                <p className="text-sm text-gray-500 mt-4 flex items-center justify-center gap-4">
+                  <span className="flex items-center gap-1">
+                    <span className="w-2 h-2 bg-green-500 rounded-full"></span>
+                    Acesso imediato
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <span className="w-2 h-2 bg-green-500 rounded-full"></span>
+                    Garantia 7 dias
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <span className="w-2 h-2 bg-green-500 rounded-full"></span>
+                    Suporte especializado
+                  </span>
+                </p>
+              </div>
+            </div>
 
-        <div className="relative max-w-4xl mx-auto">
-          <div className="relative soft-pulse">
-            <Image
-              src="/happy-mother-with-baby-journey.jpg"
-              alt="Mãe feliz com bebê representando a jornada materna completa"
-              width={800}
-              height={500}
-              className="rounded-3xl shadow-xl mx-auto border-4 border-white"
-              priority
-            />
-          </div>
-
-          <div className="absolute -top-4 -left-4 offer-card px-6 py-3 rounded-full text-lg font-black shadow-lg gentle-bounce">
-            🎯 4 PRODUTOS
-          </div>
-          <div
-            className="absolute -top-4 -right-4 bg-gradient-to-r from-pink-500 to-pink-600 text-white px-6 py-3 rounded-full text-lg font-black shadow-lg gentle-bounce border-2 border-white"
-            style={{ animationDelay: "0.5s" }}
-          >
-            💥 70% OFF
-          </div>
-          <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-pink-400 to-pink-500 text-white px-8 py-4 rounded-full text-lg font-black shadow-lg baby-float border-2 border-white">
-            🏆 COMBO MAIS VENDIDO!
+            <div className="order-1 lg:order-2">
+              <div className="relative">
+                <div className="absolute -inset-4 bg-gradient-to-r from-rose-200 to-pink-200 rounded-3xl blur-2xl opacity-20"></div>
+                <div className="relative bg-white rounded-3xl p-2 shadow-2xl">
+                  <Image
+                    src="/happy-mother-with-baby-journey.jpg"
+                    alt="Mãe feliz com bebê representando a jornada materna completa"
+                    width={600}
+                    height={400}
+                    className="rounded-2xl w-full h-auto"
+                    priority
+                  />
+                  <div className="absolute -top-4 -left-4 bg-white rounded-2xl px-4 py-2 shadow-lg border border-gray-100">
+                    <div className="text-sm font-semibold text-gray-900">4 Guias Completos</div>
+                  </div>
+                  <div className="absolute -top-4 -right-4 bg-gradient-to-r from-rose-500 to-pink-500 text-white rounded-2xl px-4 py-2 shadow-lg">
+                    <div className="text-sm font-semibold">70% OFF</div>
+                  </div>
+                  <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-amber-400 to-orange-400 text-white rounded-2xl px-6 py-2 shadow-lg">
+                    <div className="text-sm font-semibold">Mais Vendido</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

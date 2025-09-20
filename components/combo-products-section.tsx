@@ -8,7 +8,7 @@ export function ComboProductsSection() {
       subtitle: "10 Massagens para Gestação",
       description: "Técnicas seguras para alívio de dores, inchaço e desconfortos durante toda a gravidez.",
       image: "/pregnant-woman-relaxing-during-massage-therapy-ses.jpg",
-      value: "R$ 47,90",
+      value: "R$ 97",
       icon: "🤰",
     },
     {
@@ -16,7 +16,7 @@ export function ComboProductsSection() {
       subtitle: "Método P.E.G.A de Amamentação",
       description: "Pega correta, posicionamento ideal e soluções para os principais problemas da amamentação.",
       image: "/mother-breastfeeding-baby-peacefully.jpg",
-      value: "R$ 49,90",
+      value: "R$ 97",
       icon: "🤱",
     },
     {
@@ -24,7 +24,7 @@ export function ComboProductsSection() {
       subtitle: "Recuperação Pós-Parto Completa",
       description: "Corpo, mente e autoestima. Cicatrização, libido, organização da rotina e bem-estar total.",
       image: "/happy-mother-postpartum-recovery.jpg",
-      value: "R$ 39,90",
+      value: "R$ 97",
       icon: "💪",
     },
     {
@@ -32,7 +32,7 @@ export function ComboProductsSection() {
       subtitle: "Bebê e Mamãe Dormem Melhor",
       description: "Técnicas comprovadas para estabelecer rotina de sono saudável para toda a família.",
       image: "/peaceful-baby-sleeping-soundly.jpg",
-      value: "R$ 42,90",
+      value: "R$ 97",
       icon: "😴",
     },
   ]
@@ -79,16 +79,17 @@ export function ComboProductsSection() {
           ))}
         </div>
 
-        {/* Valor total */}
         <div className="text-center bg-card p-8 rounded-2xl border-2 border-primary/20">
           <div className="mb-4">
-            <span className="text-2xl text-muted-foreground line-through">Valor individual: R$ 180,60</span>
+            <span className="text-2xl text-muted-foreground line-through">
+              Separados, cada guia custaria R$97 (total R$297)
+            </span>
           </div>
           <div className="text-4xl font-bold text-primary mb-2">COMBO COMPLETO:</div>
           <div className="bg-pink-600 text-white px-6 py-4 rounded-xl border-2 border-pink-200 inline-block text-5xl font-bold mb-4">
-            R$ 67,90
+            R$ 67
           </div>
-          <div className="text-lg text-foreground font-semibold">💰 Você economiza R$ 112,70 (70% de desconto)</div>
+          <div className="text-lg text-foreground font-semibold">💰 Você economiza R$ 230</div>
         </div>
       </div>
     </section>
